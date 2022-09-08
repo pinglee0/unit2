@@ -38,8 +38,8 @@ class Sprite{
     double center_x;
     double center_y;
     public Sprite(){
-        center_x = 0;
-        center_y = 0;
+        center_x = 10;
+        center_y = 10;
     }
     public Sprite(double x, double y){
         center_x = x;
@@ -50,9 +50,21 @@ class example2 {
         public static void main(String[] args){
             Sprite player1 = new Sprite(100, 200);
             System.out.println(player1.center_x);
+            player1 = new Sprite(1,2);
             Sprite player2 = null;
-            //System.out.println(player2.center_x); // NullPointerException
+            //player2.center_x=30;// NullPointerException
+            player2=new Sprite();
+            player2.center_x=30;
+            System.out.println(player2.center_x);
+            int a;
+            String a2;
             Sprite player3;
-            //System.out.println(player3.center_x);// error! Player3 is not initialized
+            //player3.center_x=30;// error! Player3 is not initialized
+            player3=new Sprite(100, 200);
+            a=2;
+            a2="as ,d\\";
+            System.out.println(a2);
+            player3.center_x=130;
+            System.out.println(player3.center_x);
         }
 }
